@@ -1,0 +1,48 @@
+main > aside article {
+  background-color: lemonchiffon;
+  padding: 0;
+  margin: 1rem
+}
+
+main > aside article:first-of-type figure {
+  margin-bottom: 1.5rem;
+}
+
+main > aside article:not(:first-of-type) {
+  display: grid;
+  grid-template-areas: "figure title"
+                       "figure text";
+}
+
+main > aside article:not(:first-of-type) figure {
+  display: flex;
+  grid-area: figure;
+  padding-right: 1rem;
+}
+
+main > aside article:not(:first-of-type) img {
+  width: 100px;
+  height: 100px;
+}
+
+main > aside article:not(:first-of-type) header {
+  display: inline;
+  grid-area: title;
+}
+
+main > aside article:not(:first-of-type) p {
+  grid-area: text;
+}
+
+main > aside article header {
+  font-size: 2em;
+}
+
+main > aside article p:not(:first-of-type) {
+  display: none;
+}
+
+main > aside article p {
+  height: calc(3em * 1.2);
+  overflow: hidden;
+}

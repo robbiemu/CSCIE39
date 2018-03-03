@@ -1,0 +1,22 @@
+@media (min-width: 590px) {
+  main {
+    display: grid;
+    grid-template-areas: "content aside"
+                             "ads aside";
+    grid-template-columns: 1fr 22em;
+    grid-template-rows: 1fr calc(90px + 4rem)
+  }
+}
+
+main > article {
+  grid-area: content;
+}
+
+main > .ads { 
+  grid-area: ads;
+}
+
+main > aside {
+  grid-area: aside;
+  background-color: white;
+}

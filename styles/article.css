@@ -1,0 +1,16 @@
+article {
+  padding: 1em;
+}
+
+article figure {
+  display: flex
+}
+
+article figure img {
+  max-width: 100%;
+}
+
+article header {
+  font-family: Rajdhani;
+  font-size: 3em;
+}
