@@ -1,0 +1,13 @@
+main article {
+  background-color: lavender;
+}
+
+main .ads {
+  background-color: whitesmoke;
+}
+
+main > article img { 
+  align-self: flex-start;
+  margin: auto; 
+  margin-bottom: 2rem;
+}
